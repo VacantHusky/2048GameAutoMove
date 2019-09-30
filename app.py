@@ -2,11 +2,11 @@ import json
 from flask import Flask, request, render_template
 import numpy as np
 from model.ai import Ai
-from settings import DevelopmentConfig
+from settings import ProductionConfig
 
 app = Flask(__name__, template_folder='./templates', static_folder='./static')
 # 加载配置
-app.config.from_object(DevelopmentConfig)
+app.config.from_object(ProductionConfig)
 
 nmap = {0: 'U', 1: 'R', 2: 'D', 3: 'L'}
 fmap = dict([val, key] for key, val in nmap.items())
