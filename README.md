@@ -1,2 +1,9 @@
-# 2048GameAutoMove
-2048GameAutoMove
+# 2048游戏策略算法(2048GameAutoMove)
+
+自动玩2048
+
+能够玩到2048或更高
+
+有许多bug还没有解决，请不要在游戏过程中按方向键
+
+使用pyhton3、Flask
